@@ -66,11 +66,43 @@ body {
 
     .wrapper-grid .days-wrapper .day,
     .wrapper-grid .format-wrapper .format {
-        font-size: 1.6vw;
+        font-size: 1.7vw;
     }
 
     .wrapper-grid .hour {
         font-size: 12vw;
+    }
+
+}
+
+@media screen and (max-width: 528px) {
+
+    .wrapper-grid .hour {
+        font-size: 17vw;
+    }
+
+    .wrapper-grid .format-wrapper {
+        flex-direction: column-reverse;
+        align-content: flex-start;
+        height: fit-content;
+        gap: 0;
+        padding: 0;
+    }
+
+
+    .wrapper-grid .format-wrapper .format {
+        font-size: 2rem;
+        padding: 0;
+    }
+
+    .wrapper-grid .days-wrapper .day {
+        font-size: 2rem;
+        padding: 0;
+        display: none;
+    }
+
+    .wrapper-grid .days-wrapper .today {
+        display: block;
     }
 
 }
