@@ -91,12 +91,12 @@ body {
 
 
     .wrapper-grid .format-wrapper .format {
-        font-size: 2rem;
+        font-size: 1.3rem;
         padding: 0;
     }
 
     .wrapper-grid .days-wrapper .day {
-        font-size: 2rem;
+        font-size: 1.3rem;
         padding: 0;
         display: none;
     }
