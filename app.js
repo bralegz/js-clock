@@ -1,5 +1,5 @@
 const date = new Date();
-const hour24 = date.toLocaleTimeString("en-us", {hour12: false});
+const hour24 = date.toLocaleTimeString("en-us", {hourCycle: 'h23'});
 let intervalId;
 let day = date.getDay()
 
@@ -48,7 +48,7 @@ switch (day) {
 
 
 intervalId = setInterval( () => {
-    hourDisplay.innerHTML = new Date().toLocaleTimeString("en-us", {hour12: false});
+    hourDisplay.innerHTML = new Date().toLocaleTimeString("en-us", {hourCycle: 'h23'});
 }, 1000);
 
 
@@ -61,7 +61,7 @@ function setTime(id) {
     } else {
         clearInterval(intervalId);
         intervalId = setInterval( () => {
-            hourDisplay.innerHTML = new Date().toLocaleTimeString("en-us", {hour12: false});
+            hourDisplay.innerHTML = new Date().toLocaleTimeString("en-us", {hourCycle: 'h23'});
         }, 1000);
     }
 }
