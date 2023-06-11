@@ -48,6 +48,10 @@ body {
   padding: 10px;
 }
 
+.format {
+  align-self: flex-start;
+}
+
 .wrapper-grid .hour {
   align-self: center;
   justify-self: center;
